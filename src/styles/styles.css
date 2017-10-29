@@ -1,0 +1,166 @@
+/* Styles */
+
+#app {
+    font: 14px 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: #4d4d4d;
+    min-width: 550px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+  }
+  
+/* ------bootstrap overrides------- */
+.jumbotron {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 5px;
+  color: inherit;
+  background-color: #eee;
+}
+.jumbotron h1,
+.jumbotron .h1 {
+  color: inherit;
+}
+.jumbotron > hr {
+  border-top-color: #d5d5d5;
+}
+.container .jumbotron,
+.container-fluid .jumbotron {
+  padding-right: 15px;
+  padding-left: 15px;
+  border-radius: 6px;
+}
+.jumbotron .container {
+  max-width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .jumbotron {
+    padding-top: 4px;
+    padding-bottom: 4px;
+  }
+  .container .jumbotron,
+  .container-fluid .jumbotron {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .jumbotron h1,
+  .jumbotron .h1 {
+    font-size: 24px;
+  }
+}
+    
+a.active {
+    color: orange;
+}
+/* ------end bootstrap overrides------- */
+
+
+.headerLink {
+    color: red;
+}
+
+nav {
+    padding-top: 20px;
+}
+
+body, html {
+    height:100%;
+  }
+  
+  
+  /* workaround modal-open padding issue */
+  body.modal-open {
+      padding-right:0 !important;
+  }
+  
+  /* override bootstrap styles the crude way */
+  .bg-primary {
+      color: #fff;
+      background-color: #666666!important;
+  }
+  
+  
+  #sidebar {
+     padding-left:0;
+  }
+  
+  /*
+   * Off Canvas at medium breakpoint
+   * --------------------------------------------------
+   */
+  @media screen and (max-width: 48em) {
+  
+    .row-offcanvas {
+      position: relative;
+      -webkit-transition: all 0.25s ease-out;
+      -moz-transition: all 0.25s ease-out;
+      transition: all 0.25s ease-out;
+    }
+  
+    .row-offcanvas-left
+    .sidebar-offcanvas {
+      left: -33%;
+    }
+  
+    .row-offcanvas-left.active {
+      left: 33%;
+      margin-left: -6px;
+    }
+  
+    .sidebar-offcanvas {
+      position: absolute;
+      top: 0;
+      width: 33%;
+      height: 100%;
+    }
+  }
+  
+  /*
+   * Off Canvas wider at sm breakpoint
+   * --------------------------------------------------
+   */
+  @media screen and (max-width: 34em) {
+    .row-offcanvas-left
+    .sidebar-offcanvas {
+      left: -45%;
+    }
+  
+    .row-offcanvas-left.active {
+      left: 45%;
+      margin-left: -6px;
+    }
+    
+    .sidebar-offcanvas {
+      width: 45%;
+    }
+  }
+  
+  .card {
+      overflow:hidden;
+  }
+  
+  .card-block .rotate {
+      z-index: 8;
+      float: right;
+      height: 100%;
+  }
+  
+  .card-block .rotate i {
+      color: rgba(20, 20, 20, 0.15);
+      position: absolute;
+      left: 0;
+      left: auto;
+      right: -10px;
+      bottom: 0;
+      display: block;
+      -webkit-transform: rotate(-44deg);
+      -moz-transform: rotate(-44deg);
+      -o-transform: rotate(-44deg);
+      -ms-transform: rotate(-44deg);
+      transform: rotate(-44deg);
+  }
+  
