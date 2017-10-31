@@ -9,9 +9,11 @@ import {Router, browserHistory} from 'react-router';
 import routes from './routes';
 import {loadHacks} from './actions/hackActions';
 import {loadAuthors} from './actions/authorActions';
+import {loadPracticeTopics} from './actions/practiceTopicActions';
 
 
 import '../node_modules/bootstrap/dist/css/bootstrap.css';
+<script src="../node_modules/bootstrap/dist/js/bootstrap.js"></script>
 import '../node_modules/toastr/build/toastr.min.css';
 import './styles/styles.css';
 
@@ -19,6 +21,7 @@ import './styles/styles.css';
 const store = configureStore();
 store.dispatch(loadHacks());
 store.dispatch(loadAuthors());
+store.dispatch(loadPracticeTopics());
 
 
 render (

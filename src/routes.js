@@ -7,7 +7,7 @@ import AboutPage from './components/about/AboutPage';
 import HacksPage from './components/hacks/HacksPage';
 import ManageHackPage from './components/hacks/ManageHackPage';
 import GettingStartedPage from './components/help/GettingStartedPage';
-import PracticeHomePage from './components/practice/PracticeHomePage';
+import PracticeTopicsPage from './components/practice/PracticeTopicsPage';
 
 
 
@@ -19,7 +19,7 @@ export default (
         <Route path="mathhack/:id" component={ManageHackPage} />
         <Route path="about" component={AboutPage} />
         <Route path="getting-started" component={GettingStartedPage} />
-        <Route path="practice-home" component={PracticeHomePage} />
+        <Route path="practice-home" component={PracticeTopicsPage} />
 
     </Route>
 

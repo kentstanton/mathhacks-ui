@@ -13,10 +13,16 @@ a {
     text-decoration: none;
   }
   
+
+ .neonRight {
+  text-align: right;
+  color: greenyellow;
+  float: right;
+  padding-right: 4px;
+ } 
+
 /* ------bootstrap overrides------- */
 .jumbotron {
-  padding-top: 10px;
-  padding-bottom: 10px;
   margin-bottom: 5px;
   color: inherit;
   background-color: #eee;
@@ -39,8 +45,8 @@ a {
 }
 @media screen and (min-width: 768px) {
   .jumbotron {
-    padding-top: 4px;
-    padding-bottom: 4px;
+    padding-top: 1px;
+    padding-bottom: 1px;
   }
   .container .jumbotron,
   .container-fluid .jumbotron {
@@ -49,7 +55,7 @@ a {
   }
   .jumbotron h1,
   .jumbotron .h1 {
-    font-size: 24px;
+    font-size: 20px;
   }
 }
     
@@ -59,12 +65,10 @@ a.active {
 /* ------end bootstrap overrides------- */
 
 
-.headerLink {
-    color: red;
-}
 
 nav {
-    padding-top: 20px;
+    padding-top: 10px;
+    padding-left: 10px;
 }
 
 body, html {
@@ -140,9 +144,18 @@ body, html {
   }
   
   .card {
-      overflow:hidden;
-  }
-  
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+}  
   .card-block .rotate {
       z-index: 8;
       float: right;
