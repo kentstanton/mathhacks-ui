@@ -21,7 +21,7 @@ class HomePage extends React.Component {
                                         <div className="rotate">
                                             <i className="fa fa-list fa-3x"></i>
                                         </div>
-                                        <h6 className="text-uppercase">Scientific Notation Level 1</h6>
+                                        <h6 className="text-uppercase">Scientific Notation Level 1: 200 Points</h6>
                                         <h1 className="display-4">134</h1>
                                     </div>
                                 </div>
@@ -34,7 +34,7 @@ class HomePage extends React.Component {
                                         <div className="rotate">
                                             <i className="fa fa-list fa-3x"></i>
                                         </div>
-                                        <h6 className="text-uppercase">Scientific Notation Level 2</h6>
+                                        <h6 className="text-uppercase">Scientific Notation Level 2: 100 Points</h6>
                                         <h1 className="display-4">87</h1>
                                     </div>
                                 </div>

@@ -17,6 +17,14 @@ app.use(require('webpack-dev-middleware')(compiler, {
 
 app.use(require('webpack-hot-middleware')(compiler));
 
+app.get('/testd3', function(req, res){
+  res.sendFile(path.join( __dirname, '../src/testd3.html'));
+});
+
+app.get('/testdmathjax', function(req, res){
+  res.sendFile(path.join( __dirname, '../src/testmathjax.html'));
+});
+
 app.get('*', function(req, res) {
   res.sendFile(path.join( __dirname, '../src/index.html'));
 });

@@ -15,7 +15,7 @@ class PracticeTopicsPage extends React.Component {
 
 
     practiceTopicRow(practiceTopic, index) {
-        return <div key={index}>{practiceTopic.title}</div>;     
+        return <div key={index}>{practiceTopic.title}</div>;
     }
 
     //redirectToAddHackPage () {
@@ -25,7 +25,7 @@ class PracticeTopicsPage extends React.Component {
     // convert to call child components - remove markup
     render() {
         const {practiceTopics} = this.props;
-        
+
         return (
             <div>
                 <h1>PracticeTopics</h1>
@@ -36,7 +36,7 @@ class PracticeTopicsPage extends React.Component {
                 />
                 <PracticeTopicsList practiceTopics={practiceTopics} />
 
-            </div>    
+            </div>
         );
     }
 
@@ -45,7 +45,7 @@ class PracticeTopicsPage extends React.Component {
 // declare proptypes so they can be validated
 PracticeTopicsPage.propTypes = {
     practiceTopics: PropTypes.array.isRequired,
-    actions: PropTypes.object.isRequired 
+    actions: PropTypes.object.isRequired
 };
 
 // redux connect and dispatch functions
