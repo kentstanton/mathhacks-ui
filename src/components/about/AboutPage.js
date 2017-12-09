@@ -7,46 +7,41 @@ const tex = `f(x) = \\int_{-\\infty}^\\infty
 
 const asciimath = `x^-3`
 
-/*
+
 class AboutPage extends React.Component {
     render() {
-        return (
-            <div >
-                <h1>About MathHacks</h1>
 
+      function handleClick(e) {
+        alert('The link was clicked.');
+      }
+      return (
+          <MathJax.Context>
+            <div>
+              <div className="mathquestionrow">
+                  <MathJax.Node inline>{`(e^2)^2`}</MathJax.Node>
+              </div>
+                  <div >Click on each of the equivalent expressions below:</div>
 
-            </div>
-        );
+                  <div className="mathanswerblock">
+
+                  <div className="mathanswerrow" onClick={handleClick} >
+                  <MathJax.Node>{`e*e*e*e`}</MathJax.Node>
+                  </div>
+                  <div className="mathanswerrow">
+                  <MathJax.Node>{`2*(e^2)`}</MathJax.Node>
+                  </div>
+                  <div className="mathanswerrow">
+                  <MathJax.Node>{`4*e`}</MathJax.Node>
+                  </div>
+                  <div className="mathanswerrow">
+                  <MathJax.Node>{`e^4`}</MathJax.Node>
+                  </div>
+
+                  </div>
+              </div>
+          </MathJax.Context>
+      )
     }
-}
-*/
-module.exports = () => {
-  return (
-      <MathJax.Context>
-        <div>
-          <div className="mathquestionrow">
-              <MathJax.Node inline>{`(e^2)^2`}</MathJax.Node>
-          </div>
-              <div >Click on each of the equivalent expressions below:</div>
+  }
 
-              <div className="mathanswerblock">
-
-              <div className="mathanswerrow" onClick={colorrow}>
-              <MathJax.Node>{`e*e*e*e`}</MathJax.Node>
-              </div>
-              <div className="mathanswerrow">
-              <MathJax.Node>{`2*(e^2)`}</MathJax.Node>
-              </div>
-              <div className="mathanswerrow">
-              <MathJax.Node>{`4*e`}</MathJax.Node>
-              </div>
-              <div className="mathanswerrow">
-              <MathJax.Node>{`e^4`}</MathJax.Node>
-              </div>
-
-              </div>
-          </div>
-      </MathJax.Context>
-  );
-}
-//export default AboutPage;
+  export default AboutPage;
