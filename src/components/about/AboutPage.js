@@ -58,25 +58,15 @@ const problemSet = {
 };
 
 
-let theQuestion = ""
-const answer1 = "";
-const answer2 = "";
-const answer3 = "";
-const answer4 = "";
-
-const answer1Value = "";
-const answer2Value = "";
-const answer3Value = "";
-const answer4Value = "";
 
 class AboutPage extends React.Component {
     render() {
 
       function handleClick(ans, e) {
         if (ans) {
-          alert("Correct");
+          e.target.classList = "correctAnswerRow";
         } else {
-          alert("Not Correct");
+          e.target.classList = "incorrectAnswerRow";
         }
 
       }
