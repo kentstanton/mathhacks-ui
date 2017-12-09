@@ -15,8 +15,6 @@ const Header = ({loading}) => {
             {" | "}
             <Link to="/getting-started" activeClassName="active">Getting Started</Link>
             {" | "}
-            <Link to="/about" activeClassName="active">Sam</Link>
-            {" | "}                        
             <Link to="/about" activeClassName="active">About</Link>
             {loading && <LoadingDots interval={100} dots={20}/>}
             <span className="neonRight">MathHacks: Hack Your Brain</span>

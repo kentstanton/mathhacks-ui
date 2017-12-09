@@ -2,20 +2,22 @@ import delay from './delay';
 
 const practiceTopicsData = [
   {
-    id: "never-fail-proportions",
-    title: "Never Fail Proportions",
-    sourePage: "http://www.pluralsight.com/courses/react-flux-building-applications",
+    id: "Algebra-terms-1",
+    title: "Algebra: Terms",
+    levelId: "1",
+    helpPage: "http://www.pluralsight.com/courses/react-flux-building-applications",
+    authorId: "MathHacks",
+    level: "foundations",
+    category: "Algebra"
+  },
+  {
+    id: "Pre-algebra-exponents-1",
+    title: "Pre-Algebra: Exponents",
+    levelId: "1",
+    helpPage: "http://www.pluralsight.com/courses/react-flux-building-applications",
     authorId: "MathHacks",
     level: "foundations",
     category: "Pre-Algebra"
-  },
-  {
-    id: "degrees-minutes-seconds-to-decimal-degrees",
-    title: "Convert Degrees-Minutes-Seconds to Decimal Degrees",
-    sourcePage: "http://www.pluralsight.com/courses/writing-clean-code-humans",
-    authorId: "MathHacks",
-    level: "intermediate-hack",
-    category: "everyday-math"
   }
 ];
 

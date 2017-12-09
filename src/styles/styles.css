@@ -8,18 +8,54 @@
     margin: 0 auto;
 }
 
+.mathquestionrow {
+  background-color:white;
+  color: black;
+  padding: 4px;
+  width:100%;
+  text-align: center;
+  font-size: 2em;
+}
+
+.mathquestionpromptrow {
+  background-color:white;
+  color: black;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  width:100%;
+  font-weight: bold;
+}
+
+
+.mathanswerrow {
+  text-align: center;
+  background-color: #EEEfff;
+  color: darkslategray;
+  padding: 4px;
+  border: thin solid white;
+  font-size: 1.2em;
+}
+
+.mathanswerblock {
+  text-align: center;
+  background-color: #EEEabc;
+  color: darkslategray;
+  padding: 4px;
+
+}
+
 a {
     color: black;
     text-decoration: none;
   }
-  
+
 
  .neonRight {
   text-align: right;
   color: greenyellow;
   float: right;
   padding-right: 4px;
- } 
+ }
 
 /* ------bootstrap overrides------- */
 .jumbotron {
@@ -58,7 +94,7 @@ a {
     font-size: 20px;
   }
 }
-    
+
 a.active {
     color: orange;
 }
@@ -74,47 +110,47 @@ nav {
 body, html {
     height:100%;
   }
-  
-  
+
+
   /* workaround modal-open padding issue */
   body.modal-open {
       padding-right:0 !important;
   }
-  
+
   /* override bootstrap styles the crude way */
   .bg-primary {
       color: #fff;
       background-color: #666666!important;
   }
-  
-  
+
+
   #sidebar {
      padding-left:0;
   }
-  
+
   /*
    * Off Canvas at medium breakpoint
    * --------------------------------------------------
    */
   @media screen and (max-width: 48em) {
-  
+
     .row-offcanvas {
       position: relative;
       -webkit-transition: all 0.25s ease-out;
       -moz-transition: all 0.25s ease-out;
       transition: all 0.25s ease-out;
     }
-  
+
     .row-offcanvas-left
     .sidebar-offcanvas {
       left: -33%;
     }
-  
+
     .row-offcanvas-left.active {
       left: 33%;
       margin-left: -6px;
     }
-  
+
     .sidebar-offcanvas {
       position: absolute;
       top: 0;
@@ -122,7 +158,7 @@ body, html {
       height: 100%;
     }
   }
-  
+
   /*
    * Off Canvas wider at sm breakpoint
    * --------------------------------------------------
@@ -132,17 +168,17 @@ body, html {
     .sidebar-offcanvas {
       left: -45%;
     }
-  
+
     .row-offcanvas-left.active {
       left: 45%;
       margin-left: -6px;
     }
-    
+
     .sidebar-offcanvas {
       width: 45%;
     }
   }
-  
+
   .card {
     position: relative;
     display: -ms-flexbox;
@@ -155,13 +191,13 @@ body, html {
     background-clip: border-box;
     border: 1px solid rgba(0,0,0,.125);
     border-radius: .25rem;
-}  
+}
   .card-block .rotate {
       z-index: 8;
       float: right;
       height: 100%;
   }
-  
+
   .card-block .rotate i {
       color: rgba(20, 20, 20, 0.15);
       position: absolute;
@@ -176,4 +212,3 @@ body, html {
       -ms-transform: rotate(-44deg);
       transform: rotate(-44deg);
   }
-  
