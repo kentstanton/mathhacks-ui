@@ -5,49 +5,69 @@ const tex = `f(x) = \\int_{-\\infty}^\\infty
 \\hat f(\\xi)\\,e^{2 \\pi i \\xi x}
 \\,d\\xi`
 
-const questionSet = [
-  {
-    id: 1,
-    qSetName: "Algebraic Terms",
-    qsetlevel: 1,
-    question: {
+const problemSet = {
+  "id": 1,
+  "qSetName": "Algebraic Terms",
+  "qsetlevel": 1,
+  "questions" : [
+    {
       qid: 1,
       theQuestion : "(e^2)^2",
-      answers: {
-        answer1: {
-          answer : "e*e*e*e",
+      answers: [
+        {
+          answerValue : "e*e*e*e",
           correct : 1
         },
-        answer2: {
-          answer : "2*(e^2)",
+        {
+          answerValue : "2*(e^2)",
           correct : 0
         },
-        answer3: {
-          answer : "4*e",
+        {
+          answerValue : "4*e",
           correct : 0
         },
-        answer4: {
-          answer : "e^4",
+        {
+          answerValue : "e^4",
           correct : 1
         }
-      }
-  }
+      ]
+    },
+    {
+      qid: 2,
+      theQuestion : "2(e^2)",
+      answers: [
+        {
+          answerValue : "e*e*e*e",
+          correct : 0
+        },
+        {
+          answerValuer : "2*(e^2)",
+          correct : 1
+        },
+        {
+          answerValue : "4*e",
+          correct : 0
+        },
+        {
+          answerValue : "e^4",
+          correct : 0
+        }
+      ]
+    }
+  ]
+};
 
-  }
-]
 
-//const question = `(e^2)^2`;
-let theQuestion = questionSet[0].question.theQuestion;
-const answer1 = questionSet[0].question.answers.answer1.answer;
-const answer2 = questionSet[0].question.answers.answer2.answer;
-const answer3 = questionSet[0].question.answers.answer3.answer;
-const answer4 = questionSet[0].question.answers.answer4.answer;
+let theQuestion = ""
+const answer1 = "";
+const answer2 = "";
+const answer3 = "";
+const answer4 = "";
 
-const answer1Value = questionSet[0].question.answers.answer1.correct;
-const answer2Value = questionSet[0].question.answers.answer2.correct;
-const answer3Value = questionSet[0].question.answers.answer3.correct;
-const answer4Value = questionSet[0].question.answers.answer4.correct;
-
+const answer1Value = "";
+const answer2Value = "";
+const answer3Value = "";
+const answer4Value = "";
 
 class AboutPage extends React.Component {
     render() {
@@ -64,24 +84,27 @@ class AboutPage extends React.Component {
       return (
           <MathJax.Context>
             <div>
+              <div className="questionSetName">
+              {problemSet.qSetName}
+                </div>
               <div className="mathquestionrow">
-                  <MathJax.Node inline>{theQuestion}</MathJax.Node>
+                  <MathJax.Node inline>{problemSet.questions[0].theQuestion}</MathJax.Node>
               </div>
                   <div >Click on each of the equivalent expressions below:</div>
 
                   <div className="mathanswerblock">
 
-                  <div className="mathanswerrow" onClick={handleClick.bind(this, answer1Value)} >
-                  <MathJax.Node>{answer1}</MathJax.Node>
+                  <div className="mathanswerrow" onClick={handleClick.bind(this, problemSet.questions[0].answers[0].correct)} >
+                  <MathJax.Node>{problemSet.questions[0].answers[0].answerValue}</MathJax.Node>
                   </div>
-                  <div className="mathanswerrow" onClick={handleClick.bind(this,answer2Value)}>
-                  <MathJax.Node>{answer2}</MathJax.Node>
+                  <div className="mathanswerrow" onClick={handleClick.bind(this,problemSet.questions[0].answers[1].correct)}>
+                  <MathJax.Node>{problemSet.questions[0].answers[1].answerValue}</MathJax.Node>
                   </div>
-                  <div className="mathanswerrow" onClick={handleClick.bind(this, answer3Value)}>
-                  <MathJax.Node>{answer3}</MathJax.Node>
+                  <div className="mathanswerrow" onClick={handleClick.bind(this, problemSet.questions[0].answers[2].correct)}>
+                  <MathJax.Node>{problemSet.questions[0].answers[2].answerValue}</MathJax.Node>
                   </div>
-                  <div className="mathanswerrow" onClick={handleClick.bind(this,answer4Value)}>
-                  <MathJax.Node>{answer4}</MathJax.Node>
+                  <div className="mathanswerrow" onClick={handleClick.bind(this,problemSet.questions[0].answers[3].correct)}>
+                  <MathJax.Node>{problemSet.questions[0].answers[3].answerValue}</MathJax.Node>
                   </div>
 
                   </div>
